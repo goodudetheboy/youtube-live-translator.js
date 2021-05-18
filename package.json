@@ -1,0 +1,24 @@
+{
+  "name": "YoutubeLiveTranslator",
+  "version": "1.0.0",
+  "description": "\"# YoutubeLiveTranslator\"",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goodudetheboy/YoutubeLiveTranslator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goodudetheboy/YoutubeLiveTranslator/issues"
+  },
+  "homepage": "https://github.com/goodudetheboy/YoutubeLiveTranslator#readme",
+  "devDependencies": {
+    "electron": "^12.0.8"
+  }
+}
