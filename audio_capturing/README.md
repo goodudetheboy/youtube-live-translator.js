@@ -8,8 +8,6 @@ Temporary audio from PC capturing run steps (for Windows 10)
 
 3) Once finished installing, the program will install one input channel and one output channel (you can check Sound in Control Panel for more details), which is named, respectively Cable Input (Playback section) and Cable Output (Recording section). If the driver is there, then you are in a good spot
 
-5) Switch your default output device to "Cable Input". For Windows 10, look at the Volume icon in the lower left corner of your screen, click on it, click the up ^ arrow, and change audio device to Cable Input
-
 4) Run `node audio_capturing/capture.js` to start recording. For this first run, the program will output all list of sound devices on your computer. Find something like this in the output terminal:
 ```
 id: [AUDIO_ID],
@@ -48,3 +46,11 @@ and not some bullshit error
 
 (OPTIONAL)
 9) If you want to verify the audio from `rawAudio.raw`, download Audacity and import the `rawAudio.raw` file in it. Remember to set `Encoding` to be `Signed 16-bit PCM`, `Channels` to be `2 Channels (Stereo)` and `Sample rate` to be `44100`. Audacity will conver the raw file and let you here what's in it
+
+10) Go in to Sounds, via right clicking the speaker symbol in the lower left corner and go to recording
+
+11) Left click, click on show disabled devices and enable stero mix
+
+12) Double click on stero mix, listen, check listen to this device and set the playback to Cable input
+
+11) To be able to hear, you need to plug in an auxiliary jack output device and set it to default, else stero mix will not record
