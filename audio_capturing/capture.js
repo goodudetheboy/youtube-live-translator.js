@@ -10,7 +10,7 @@ const ai = new portAudio.AudioIO({
     channelCount: 2, 
     sampleFormat: portAudio.SampleFormat16Bit,
     sampleRate: 44100,
-    deviceId: 17, // put [AUDIO_ID] here
+    deviceId: 12, // put [AUDIO_ID] here
     closeOnError: true,
   }
 });
