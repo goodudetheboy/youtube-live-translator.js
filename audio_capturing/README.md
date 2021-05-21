@@ -52,3 +52,9 @@ and not some bullshit error. The program will record the sound output of your PC
 12) Double click on stero mix, listen, check listen to this device and set the playback to Cable input
 
 11) To be able to hear, you need to plug in an auxiliary jack output device and set it to default, else stero mix will not record
+
+OR:
+12) Or you can do so through terminal. Download http://sox.sourceforge.net/, add this to your PATH file, navigate to the raw file output folder, and run:
+```
+sox -e signed-integer -b 16 --endian little -c 2 -r 44100 rawOutput.raw output.wav
+```
