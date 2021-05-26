@@ -20,5 +20,8 @@
   "homepage": "https://github.com/goodudetheboy/YoutubeLiveTranslator#readme",
   "devDependencies": {
     "electron": "^12.0.8"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
   }
 }

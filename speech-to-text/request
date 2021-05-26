@@ -1,0 +1,9 @@
+curl -XPOST 'https://api.wit.ai/speech?v=20200513' \
+    -i -L \
+    -H "Authorization: Bearer " \
+    -H "Content-Type: audio/wav" \
+    --data-binary "@sample.wav"
+    
+curl \
+ -H 'Authorization: Bearer' \
+ 'https://api.wit.ai/message?v=20210526&q=damn'
