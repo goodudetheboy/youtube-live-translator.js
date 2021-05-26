@@ -1,11 +1,11 @@
 const axios = require('axios');
-
+const { wit_api_key } = require('./config.json');
 axios({
     method: 'post',
     url: 'myurl',
     body: "@sample.wav",
     headers: {
-        'Authorization': 'Bearer WSECDWIXZH2Q4TJOFFD227KZO53NMFOO',
+        'Authorization': `Bearer ${ wit_api_key }`,
         'Content-Type': 'audio/wav'
     }
     })
