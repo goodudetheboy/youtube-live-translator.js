@@ -1,19 +1,6 @@
-const axios = require('axios');
-const { wit_api_key } = require('./config.json');
-axios({
-    method: 'post',
-    url: 'myurl',
-    body: "@sample.wav",
-    headers: {
-        'Authorization': `Bearer ${ wit_api_key }`,
-        'Content-Type': 'audio/wav'
-    }
-    })
-.then(function (response) {
-    //handle success
-    console.log(response);
-})
-.catch(function (response) {
-    //handle error
-    console.log(response);
+const spawn = require("child_process").spawn;
+const pythonProcess = spawn('python', ["speech-to-text/request.py"]);
+
+pythonProcess.stdout.on('data', (data) => {
+    console.log(data.toString());
 });

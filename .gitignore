@@ -1,3 +1,6 @@
 node_modules
 .vscode
-speech-to-text/config.json
+testing
+speech-to-text/__pycache__
+speech-to-text/request
+speech-to-text/wit/__pycache__
