@@ -1,6 +1,4 @@
 node_modules
 .vscode
 testing
-speech-to-text/__pycache__
-speech-to-text/request
-speech-to-text/wit/__pycache__
+.env
